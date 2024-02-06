@@ -1,0 +1,61 @@
+
+<!-- Add a unique identifier (blogId) to each blog -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <style>
+    .blog-content{
+        font-size: 25px;
+    }
+    #likes{
+        width : 60px;
+        height : 60px;
+    }
+    .bodyb{
+        /* background-image : url("wall.jpg"); */
+        /* width:200px; */
+        background-image: url("wall.jpg"); 
+   /* background-repeat: no-repeat; */
+   background-size: cover;
+        /* background-color: rgb(244, 240, 168); */
+    }
+    #pic{
+        width:50px;
+        height:50px;
+    }
+  </style>
+   
+  
+</head>
+<body class="bodyb" >
+   
+    
+          <div class="blog-content">
+            <!-- DOMContentLoaded(); -->
+            <!-- <h3 id="blogTitle">Blog</h3> -->
+       
+        <b>Like Section : </b></h2>
+        <!-- <h6></h6> -->
+        <div class="like-counter" id="likeCounter">Likes: 0</div>
+        <!-- <button onclick="incrementLikes()" id="likes"> 👍 </button> -->
+        <a onclick="incrementLikes()" id="likes">
+            <img id = "pic" src="likeee.jpeg" alt="GitHub Icon">
+        </a>
+        
+        
+        <div class="comments-section" id="commentsSection">
+            <h2><b>Comments Section : </b></h2>
+            <textarea id="commentInput" placeholder="Add a comment"></textarea>
+            <button onclick="addComment()">Add Comment</button>
+            <div id="commentsList"></div>
+        </div>
+    </div>
+
+    <!-- <script src="main.js"></script> -->
+    <script src="i.js"></script>
+</body>
+</html>
+
